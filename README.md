@@ -22,13 +22,17 @@ One thing to note is that the query is intentionally isolated to the same prefix
 
 ### Installation
 
-Download the plugin from [https://github.com/lacroixdesign/craft-obsolete-url-redirect](https://github.com/lacroixdesign/craft-obsolete-url-redirect), unzip, then move the `obsoleteredirect` folder to your Craft plugins folder. Install it via the Craft Control Panel as you would for any plugin. Finally, add the following snippet to your 404 template file:
+Download the [latest release](https://github.com/TheLeagueAU/craft-obsolete-url-redirect/releases), unzip, then move the `obsoleteredirect` folder to your Craft plugins folder. Install it via the Craft Control Panel as you would for any plugin. Finally, add the following snippet to your 404 template (or other) file:
 
 ```twig
 {% do craft.obsoleteRedirect.check() %}
 ```
 
-That's it!
+Pass in a string to strip it from the start of the path. This is useful for when your site URL includes a prefix that isn't used for a certain entry.
+
+```twig
+{% do craft.obsoleteRedirect.check('foo') %}
+```
 
 ### Caveats
 

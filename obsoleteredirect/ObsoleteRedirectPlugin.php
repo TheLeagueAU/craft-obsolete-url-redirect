@@ -11,17 +11,17 @@ class ObsoleteRedirectPlugin extends BasePlugin
 
     function getVersion()
     {
-        return '0.1.0';
+        return '0.1.1';
     }
 
     function getDeveloper()
     {
-        return 'Michael LaCroix';
+        return 'Michael LaCroix, The League Agency';
     }
 
     function getDeveloperUrl()
     {
-        return 'http://www.lacroixdesign.net';
+        return 'https://github.com/TheLeagueAU/craft-obsolete-url-redirect';
     }
 
     function hasCpSection()
